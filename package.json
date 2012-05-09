@@ -1,0 +1,28 @@
+{
+    "name": "jail",
+    "version": "0.0.1",
+    "description": "Create and chroot a new subprocess for an existing unix user.",
+    "main": "./index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/magne4000/node-jail.git"
+    },
+    "keywords": [
+        "jail",
+        "chroot"
+    ],
+    "author": {
+        "name": "Joël Charles",
+        "email": "joel.charles91@gmail.com",
+        "url": "https://ssl.getonmyhor.se"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "unixlib": "*",
+        "passwd": "*",
+        "posix": "*"
+    },
+    "engine": {
+        "node": ">=0.6.0"
+    }
+}
