@@ -42,7 +42,7 @@ jail = function(args, options){
                 }
             }else{
                 if (self.options['onfailedlogin']){
-                    sef.options['onfailedlogin'].call(self, m);
+                    self.options['onfailedlogin'].call(self, m);
                 }
                 isLogged = false;
             }
