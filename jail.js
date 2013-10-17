@@ -1,4 +1,4 @@
-var unixlib = require('unixlib'),
+var pam = require('authenticate-pam'),
     passwd = require('passwd'),
     fs = require('fs'),
     posix = require('posix'),
@@ -14,8 +14,8 @@ methods['init methods'] = function (data){
 };
 
 function jail(username, password){
-    unixlib.pamauth('system-auth', username, password, function(result) {
-        if (result) {
+    pam.authenticate(username, password, function(err) {
+        if (!err) {
             console.log('User %s logged !', username);
             passwd.get(username, function(user){
                 process.title = 'node-xplorer-jailed-'+username;

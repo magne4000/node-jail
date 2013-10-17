@@ -1,6 +1,6 @@
 {
     "name": "jail",
-    "version": "0.0.2",
+    "version": "0.1.0",
     "description": "Create and chroot a new subprocess for an existing unix user.",
     "main": "./index.js",
     "repository": {
@@ -18,11 +18,11 @@
     },
     "license": "MIT",
     "dependencies": {
-        "unixlib": "0.1.*",
+        "authenticate-pam": "0.1.*",
         "passwd": "0.0.*",
-        "posix": "0.0.*"
+        "posix": "1.0.*"
     },
     "engine": {
-        "node": ">=0.6.0"
+        "node": ">=0.10.0"
     }
 }
